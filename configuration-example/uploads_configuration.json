@@ -1,0 +1,71 @@
+{
+"uploads": [
+		{
+			"dal.device.UID":"ZigBee:ah.app.5149012995480293-1",
+			"_comment":"Studio Smart plug",
+			"uploads" : [
+				{ 
+					"dal.function.UID" : "EnergyMeter",
+					"operation": "getCurrent",
+					"sdp_stream": "SmartPlug01",
+					"dal_parameters": [{"dalparam":"level","sdpparam":"power"}],
+					"fixed_parameters": [{"energy":"0","id":"0"}]
+				},
+				{ 
+					"dal.function.UID" : "EnergyMeter",
+					"operation": "getTotal",
+					"sdp_stream": "SmartPlug02",
+					"dal_parameters": [{"dalparam":"level","sdpparam":"energy"}],
+					"fixed_parameters": [{"power":"0","id":"0"}]
+				}
+			]
+		},
+		{
+			"dal.device.UID":"ZigBee:ah.app.3521399293210526012-8",
+			"_comment":"Water Pump Smart plug",
+			"uploads" : [
+				{ 
+					"dal.function.UID" : "EnergyMeter",
+					"operation": "getCurrent",
+					"sdp_stream": "SmartPlug03",
+					"dal_parameters": [{"dalparam":"level","sdpparam":"power"}],
+					"fixed_parameters": [{"energy":"0","id":"0"}]
+				},
+				{ 
+					"dal.function.UID" : "EnergyMeter",
+					"operation": "getTotal",
+					"sdp_stream": "Storage",
+					"dal_parameters": [{"dalparam":"level","sdpparam":"energy"}],
+					"fixed_parameters": [{"power":"0","id":"0"}]
+				}
+			]
+		},
+		{
+			"dal.device.UID":"ZigBee:ah.app.3521399293212623160-1",
+			"_comment":"Smart Info",
+			"uploads" : [
+				{ 
+					"dal.function.UID" : "EnergyMeter",
+					"operation": "getCurrent",
+					"sdp_stream": "CurrentPower",
+					"dal_parameters": [{"dalparam":"level","sdpparam":"power"} ],
+					"fixed_parameters": []
+				},
+				{ 
+					"dal.function.UID" : "EnergyMeter",
+					"operation": "getTotal",
+					"sdp_stream": "CurrentEnergy",
+					"dal_parameters": [{"dalparam":"level","sdpparam":"energy"} ],
+					"fixed_parameters": []
+				},
+				{ 
+					"dal.function.UID" : "EnergyMeter",
+					"operation": "getTotal",
+					"sdp_stream": "Produzione",
+					"dal_parameters": [{"dalparam":"level","sdpparam":"energy"} ],
+					"fixed_parameters": [{"power":"0","id":"0"}]
+				}
+			]
+		} 
+	]
+}

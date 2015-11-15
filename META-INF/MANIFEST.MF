@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SORRISO SmartDataNet uploader
+Bundle-SymbolicName: jemma.osgi.sdp.uploader.sorriso
+Bundle-Version: 1.0.0
+Bundle-Activator: it.ismb.pert.jemma.osgi.sdp.uploader.sorriso.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.osgi.framework;version="1.3.0",
+ org.osgi.service.dal;version="1.0.2",
+ org.osgi.service.dal.functions;version="1.0.2",
+ org.slf4j;version="1.4.3"
+Bundle-ActivationPolicy: lazy
+Require-Bundle: log4j;bundle-version="1.2.17",
+ com.google.gson;bundle-version="2.2.4",
+ org.apache.commons.codec;bundle-version="1.3.0"
+Bundle-Vendor: ISMB
